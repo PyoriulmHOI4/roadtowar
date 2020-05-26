@@ -1,0 +1,44 @@
+###################
+##### GERMANY #####
+###################
+
+add_namespace = GER
+
+# Appointing A Minister
+country_event = {
+	id = GER.1
+	title = GER.1.t
+	desc = GER.1.d
+	picture = GFX_Report_GER_Reichstag
+
+	is_triggered_only = yes
+
+	option = {
+		name = GER.1.a ### Hjalmar Schacht
+		set_country_flag = GER_Hjalmar_Schacht_Flag
+	}
+
+	option = {
+		name = GER.1.b ### Walther Funk
+		set_country_flag = GER_Walther_Funk_Flag
+	}
+}
+
+# The Great Depression Ends In Germany
+country_event = {
+	id = GER.2
+	title = GER.2.t
+	desc = GER.2.d
+	picture = GFX_Report_Great_Depression
+
+	is_triggered_only = yes
+
+	option = {
+		name = GER.2.a ### We have emerged victorious.
+		news_event = {
+			id = NE.1
+			days = 0.5
+		}
+	}
+
+}

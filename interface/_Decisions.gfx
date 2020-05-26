@@ -1,0 +1,14 @@
+spriteTypes = {
+
+  ### categories
+
+  spriteType = {
+		name = "GFX_DC_GER_Great_Depression"
+		texturefile = "gfx/interface/decisions/DC_GER_Great_Depression.dds"
+	}
+
+  spriteType = {
+		name = "GFX_decision_D_Privatization"
+		texturefile = "gfx/interface/decisions/D_Privatization.dds"
+	}
+}

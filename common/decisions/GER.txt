@@ -1,0 +1,112 @@
+GER_Great_Depression = {
+
+  GER_Appoint_A_Minister = {
+
+    available = {
+        has_completed_focus = GER_The_Two_Sides
+    }
+
+    icon = ger_mefo_bills
+
+    cost = 50
+
+    fire_only_once = yes
+
+    cancel_if_not_visible = yes
+
+    complete_effect = {
+      country_event = {
+        id = GER.1
+        days = 1
+      }
+    }
+
+    ai_will_do = {
+      factor = 50
+    }
+  }
+
+  GER_Creating_More_Jobs = {
+
+    icon = generic_industry
+
+    cost = 50
+
+    days_remove = 30
+
+    cancel_if_not_visible = yes
+
+    complete_effect = {
+
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+
+  GER_Public_Works = {
+
+    icon = generic_construction
+
+    cost = 100
+
+    days_remove = 100
+
+    cancel_if_not_visible = yes
+
+    complete_effect = {
+
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+
+  GER_Privatization = {
+
+    icon = D_Privatization
+
+    cost = 100
+
+    days_remove = 100
+
+    cancel_if_not_visible = yes
+
+    complete_effect = {
+
+    }
+
+    ai_will_do = {
+      factor = 5
+    }
+  }
+
+  GER_Declare_The_End_To_The_GD = {
+
+    available = {
+        has_completed_focus = GER_United_Economic_Plan
+    }
+
+    icon = eng_trade_unions_support
+
+    cost = 50
+
+    fire_only_once = yes
+
+    cancel_if_not_visible = yes
+
+    complete_effect = {
+        country_event = {
+            id = GER.2
+            days = 0.5
+        }
+    }
+
+    ai_will_do = {
+      factor = 150
+    }
+  }
+
+}

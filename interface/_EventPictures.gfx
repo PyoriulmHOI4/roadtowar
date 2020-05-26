@@ -1,0 +1,24 @@
+spriteTypes = {
+
+  ### GENERIC REPORT
+
+  spriteType = {
+    name = "GFX_Report_Great_Depression"
+    texturefile = "gfx/event_pictures/Report_Great_Depression.dds"
+  }
+
+  ### GENERIC NEWS
+
+  spriteType = {
+    name = "GFX_News_Great_Depression"
+    texturefile = "gfx/event_pictures/News_Great_Depression.dds"
+  }
+
+  ### GERMANY
+
+  spriteType = {
+    name = "GFX_Report_GER_Reichstag"
+    texturefile = "gfx/event_pictures/Report_GER_Reichstag.dds"
+  }
+
+}

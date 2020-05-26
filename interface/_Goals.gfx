@@ -1,0 +1,38 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_GER_Recover_From_The_Depression"
+		texturefile = "gfx/interface/goals/GER_Recover_From_The_Depression.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_The_Two_Sides"
+		texturefile = "gfx/interface/goals/GER_The_Two_Sides.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Research"
+		texturefile = "gfx/interface/goals/Research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Deals_With_Researchers"
+		texturefile = "gfx/interface/goals/Deals_With_Researchers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_Establish_Volkswagen"
+		texturefile = "gfx/interface/goals/GER_Establish_Volkswagen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_Autarky"
+		texturefile = "gfx/interface/goals/GER_Autarky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_Autarkic_Government"
+		texturefile = "gfx/interface/goals/GER_Autarkic_Government.dds"
+	}
+
+}

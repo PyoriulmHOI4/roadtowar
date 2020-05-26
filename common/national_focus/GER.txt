@@ -1,0 +1,241 @@
+focus_tree = {
+	id = GER_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 150
+            tag = GER
+        }
+    }
+
+    reset_on_civil_war = no
+
+    focus = {
+        id = GER_Recover_From_The_Depression
+        icon = GFX_GER_Recover_From_The_Depression
+        x = 5
+        y = 0
+        cost = 5
+        completion_reward = {
+						unlock_decision_category_tooltip = GER_Great_Depression
+        }
+    }
+
+    focus = {
+        id = GER_The_Two_Sides
+        icon = GFX_GER_The_Two_Sides
+        prerequisite = { focus = GER_Recover_From_The_Depression }
+        x = -2
+        y = 1
+        relative_position_id = GER_Recover_From_The_Depression
+        cost = 5
+        completion_reward = {
+						add_political_power = 100
+						custom_effect_tooltip = GER_Schacht_Funk_Choice_TT
+        }
+    }
+
+    focus = {
+        id = GER_Ally_The_Technocrats
+        icon = GFX_Research
+        prerequisite = { focus = GER_The_Two_Sides }
+        mutually_exclusive = { focus = GER_Ally_The_Autarks }
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = GER_Chose_Funk_TT
+						has_country_flag = GER_Walther_Funk_Flag
+					}
+				}
+        x = -1
+        y = 1
+        relative_position_id = GER_The_Two_Sides
+        cost = 5
+        completion_reward = {
+						add_ideas = {
+								GER_Technocracy
+						}
+        }
+    }
+
+    focus = {
+        id = GER_Government_Technocrats
+        icon = GFX_Deals_With_Researchers
+        prerequisite = { focus = GER_Ally_The_Technocrats }
+        x = 0
+        y = 1
+        relative_position_id = GER_Ally_The_Technocrats
+        cost = 5
+        completion_reward = {
+						add_political_power = 100
+        }
+    }
+
+		focus = {
+        id = GER_Ally_The_Autarks
+        icon = GFX_GER_Autarky
+        prerequisite = { focus = GER_The_Two_Sides }
+        mutually_exclusive = { focus = GER_Ally_The_Technocrats }
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = GER_Chose_Schacht_TT
+						has_country_flag = GER_Hjalmar_Schacht_Flag
+					}
+				}
+        x = 1
+        y = 1
+        relative_position_id = GER_The_Two_Sides
+        cost = 5
+        completion_reward = {
+					add_ideas = {
+							GER_autarky_idea
+					}
+        }
+    }
+
+		focus = {
+        id = GER_Government_Autarks
+        icon = GFX_GER_Autarkic_Government
+        prerequisite = { focus = GER_Ally_The_Autarks }
+        x = 0
+        y = 1
+        relative_position_id = GER_Ally_The_Autarks
+        cost = 5
+        completion_reward = {
+						add_political_power = 100
+        }
+    }
+
+		focus = {
+        id = GER_United_Economic_Plan
+        icon = GFX_goal_generic_production
+        prerequisite = { focus = GER_Government_Technocrats OR = GER_Government_Autarks }
+        x = 1
+        y = 1
+        relative_position_id = GER_Government_Technocrats
+        cost = 10
+        completion_reward = {
+						unlock_decision_tooltip = GER_Declare_The_End_To_The_GD
+        }
+    }
+
+		focus = {
+        id = GER_Grosraumwirtschaft
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = GER_Recover_From_The_Depression }
+        x = 3
+        y = 1
+        relative_position_id = GER_Recover_From_The_Depression
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Aligning_Central_Europe
+        icon = GFX_goal_generic_positive_trade_relations
+        prerequisite = { focus = GER_Grosraumwirtschaft }
+        x = -2
+        y = 1
+        relative_position_id = GER_Grosraumwirtschaft
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Reichsautobahn
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = GER_Aligning_Central_Europe }
+        x = 0
+        y = 1
+        relative_position_id = GER_Aligning_Central_Europe
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Coal_Liquidization
+        icon = GFX_goal_generic_oil_refinery
+        prerequisite = { focus = GER_Grosraumwirtschaft }
+        x = 0
+        y = 1
+        relative_position_id = GER_Grosraumwirtschaft
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Synthetic_Rubber
+        icon = GFX_focus_generic_rubber
+        prerequisite = { focus = GER_Coal_Liquidization }
+        x = 0
+        y = 1
+        relative_position_id = GER_Coal_Liquidization
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Reichswerke_Hermann_Goring
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = GER_Grosraumwirtschaft }
+        x = 2
+        y = 1
+        relative_position_id = GER_Grosraumwirtschaft
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Establish_Volkswagen
+        icon = GFX_GER_Establish_Volkswagen
+        prerequisite = { focus = GER_Reichswerke_Hermann_Goring }
+        x = 0
+        y = 1
+        relative_position_id = GER_Reichswerke_Hermann_Goring
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Totalen_Krieg
+        icon = GFX_goal_generic_demand_territory
+				prerequisite = { focus = GER_Reichsautobahn }
+				prerequisite = { focus = GER_Synthetic_Rubber }
+        prerequisite = { focus = GER_Establish_Volkswagen }
+        x = 0
+        y = 1
+        relative_position_id = GER_Synthetic_Rubber
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+		focus = {
+        id = GER_Uranprojekt
+        icon = GFX_focus_wonderweapons
+				prerequisite = { focus = GER_Totalen_Krieg }
+				prerequisite = { focus = GER_United_Economic_Plan }
+        x = 2
+        y = 1
+        relative_position_id = GER_United_Economic_Plan
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+################
+##### GER ######
+################
+
+GER_Great_Depression = {
+
+	icon = generic_economy
+
+	picture = GFX_DC_GER_Great_Depression
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_completed_focus = GER_Recover_From_The_Depression
+	}
+}

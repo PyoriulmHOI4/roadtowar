@@ -1,0 +1,32 @@
+################
+##### NEWS #####
+################
+
+add_namespace = NE
+
+# The Great Depression Ends In Germany
+news_event = {
+	id = NE.1
+	title = NE.1.t
+	desc = NE.1.d
+	picture = GFX_News_Great_Depression
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = NE.1.a
+		trigger = {
+      original_tag = GER
+    }
+	}
+	option = {
+		name = NE.1.b
+		trigger = {
+      NOT = {
+        original_tag = GER
+      }
+    }
+	}
+}
